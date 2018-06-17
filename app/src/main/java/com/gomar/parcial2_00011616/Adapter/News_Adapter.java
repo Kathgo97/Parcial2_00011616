@@ -28,14 +28,13 @@ public class News_Adapter extends RecyclerView.Adapter<News_Adapter.NewsViewHold
     private Context context;
     public static class NewsViewHolder extends RecyclerView.ViewHolder{
         ImageView imageNews;
-        TextView title,fab,description,date,category;
+        TextView title,fab,description,category;
         CardView container;
         public NewsViewHolder(View itemView) {
             super(itemView);
             imageNews=itemView.findViewById(R.id.imageview_news);
             title = itemView.findViewById(R.id.text_title_news);
             fab = itemView.findViewById(R.id.text_fab);
-            date = itemView.findViewById(R.id.text_date_news);
             category = itemView.findViewById(R.id.text_category_news);
             container = itemView.findViewById(R.id.new_container);
         }
@@ -89,6 +88,8 @@ public class News_Adapter extends RecyclerView.Adapter<News_Adapter.NewsViewHold
         });
 
     }
+
+
 
 
     @Override
