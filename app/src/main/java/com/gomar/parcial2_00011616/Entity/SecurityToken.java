@@ -1,16 +1,15 @@
-package com.gomar.parcial2_00011616;
+package com.gomar.parcial2_00011616.Entity;
 
 import android.os.Parcel;
 import android.os.Parcelable;
 
 import com.google.gson.annotations.SerializedName;
 
-public class Token implements Parcelable {
-
+public class SecurityToken implements Parcelable {
     @SerializedName("token")
     private String tokenSecurity;
 
-    protected Token(Parcel in) {
+    protected SecurityToken(Parcel in) {
         tokenSecurity = in.readString();
     }
 
@@ -24,19 +23,19 @@ public class Token implements Parcelable {
         return 0;
     }
 
-    public static final Creator<Token> CREATOR = new Creator<Token>() {
+    public static final Creator<SecurityToken> CREATOR = new Creator<SecurityToken>() {
         @Override
-        public Token createFromParcel(Parcel in) {
-            return new Token(in);
+        public SecurityToken createFromParcel(Parcel in) {
+            return new SecurityToken(in);
         }
 
         @Override
-        public Token[] newArray(int size) {
-            return new Token[size];
+        public SecurityToken[] newArray(int size) {
+            return new SecurityToken[size];
         }
     };
 
-    public Token(String tokenSecurity) {
+    public SecurityToken(String tokenSecurity) {
         this.tokenSecurity = tokenSecurity;
     }
 

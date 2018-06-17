@@ -1,7 +1,7 @@
-package com.gomar.parcial2_00011616.Entity.Deserializer;
+package com.gomar.parcial2_00011616.API.Deserializer;
 
-import com.gomar.parcial2_00011616.Response.FavoriteResponse;
-import com.gomar.parcial2_00011616.Response.NewsResponse;
+import com.gomar.parcial2_00011616.API.Response.FavoriteResponse;
+import com.gomar.parcial2_00011616.API.Response.NewsResponse;
 import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonDeserializer;
 import com.google.gson.JsonElement;

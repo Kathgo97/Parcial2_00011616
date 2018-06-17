@@ -1,4 +1,4 @@
-package com.gomar.parcial2_00011616.Response;
+package com.gomar.parcial2_00011616.API.Response;
 
 import com.google.gson.annotations.SerializedName;
 
